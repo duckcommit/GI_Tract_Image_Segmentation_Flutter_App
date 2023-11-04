@@ -28,6 +28,13 @@ Firebase: Provides user authentication and OTP verification.
 
 Firestore: A NoSQL database for storing and managing user data and segmented images.
 
+# Demo
+
+
+
+https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App/assets/22213675/1efb0859-31d1-46ed-b9e5-492b8aaf9e33
+
+
 
 # Getting Started
 
