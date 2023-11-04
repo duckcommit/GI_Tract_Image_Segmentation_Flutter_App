@@ -1,0 +1,10 @@
+pandas
+numpy
+fastapi
+opencv-python
+keras
+uvicorn
+matplotlib
+firebase
+firebase_admin
+google-cloud-storage
