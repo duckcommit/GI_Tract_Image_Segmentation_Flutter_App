@@ -1,6 +1,7 @@
 *.h linguist-detectable=false
 *.cc linguist-detectable=false
 *.cpp linguist-detectable=false
+*.py linguist-detectable=false
 *.kt linguist-detectable=false
 *.rb linguist-detectable=false
 *.swift linguist-detectable=false
