@@ -1,10 +1,10 @@
 *.h linguist-detectable=false
 *.cc linguist-detectable=false
 *.cpp linguist-detectable=false
-*.py linguist-vendored
+*.py linguist-detectable=false
 *.kt linguist-detectable=false
 *.rb linguist-detectable=false
-*.makefile linguist-vendored
+*.makefile linguist-detectable=false
 *.swift linguist-detectable=false
 *.cmake linguist-detectable=false
 *.gradle linguist-detectable=false
