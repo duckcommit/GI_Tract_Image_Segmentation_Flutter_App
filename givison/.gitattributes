@@ -4,7 +4,7 @@
 *.py linguist-detectable=false
 *.kt linguist-detectable=false
 *.rb linguist-detectable=false
-*.makefile linguist-detectable=false
+*.make linguist-detectable=false
 *.swift linguist-detectable=false
 *.cmake linguist-detectable=false
 *.gradle linguist-detectable=false
