@@ -1,6 +1,7 @@
+// ignore_for_file: empty_catches
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:givison/main.dart';
 import 'package:givison/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:givison/src/features/authentication/screens/welcome/welcome_screen.dart';
 import 'package:givison/src/repository/authentication_repository/exceptions/signup_email_password_failure.dart';
@@ -26,14 +27,12 @@ class AuthenticationRepository extends GetxController{
   Future<void> createUserWithEmailandPassword(String email, String password)async{
     try{
     await _auth.signInWithEmailAndPassword(email: email, password: password);
-    firebaseUser.value!=null? Get.offAll(()=>const Dashboard()): Get.to(()=>WelcomeScreen());
+    firebaseUser.value!=null? Get.offAll(()=>const Dashboard()): Get.to(()=>const WelcomeScreen());
     } on FirebaseAuthException catch(e){
       final ex = SignupWithEmailAndPasswordFailure.code(e.code);
-      print("FIREBASE AUTH EXCEPTION - ${ex.message}");
       throw ex; 
     } catch(_){
       const ex = SignupWithEmailAndPasswordFailure();
-      print("EXCEPTION -${ex.message}");
       throw ex;
     }
   }
@@ -41,6 +40,7 @@ class AuthenticationRepository extends GetxController{
   Future<void> loginWithEmailandPassword(String email, String password)async{
     try{
     await _auth.signInWithEmailAndPassword(email: email, password: password);
+    // ignore: unused_catch_clause
     } on FirebaseAuthException catch(e){
     } catch(_){}
   }
