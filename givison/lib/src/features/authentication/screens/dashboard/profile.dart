@@ -1,13 +1,10 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:givison/src/constants/image_strings.dart';
 import 'package:givison/src/constants/size.dart';
 import 'package:givison/src/constants/text_strings.dart';
-import 'package:givison/src/features/authentication/controllers/signup_controller.dart';
-import 'package:givison/src/features/authentication/screens/login/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:givison/src/utils/utils.dart';
-import 'package:givison/src/features/authentication/screens/dashboard/verify_email.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -79,27 +76,27 @@ _launchURL() async {
           )
         ]
       ),
-        backgroundColor: Color.fromRGBO(184, 190, 221, 1),
+        backgroundColor: const Color.fromRGBO(184, 190, 221, 1),
         body: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(tDefaultSize),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image(image: AssetImage(tprof), height: size.height*0.37,),
+                Image(image: const AssetImage(tprof), height: size.height*0.37,),
 
                 Form(
                   
                   key: _formKey,
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: tFormHeight-10),
+                    padding: const EdgeInsets.symmetric(vertical: tFormHeight-10),
                     child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextFormField(
                         readOnly: true,
                         initialValue: 'Vyshnav',
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Icons.person_outline_outlined),
                           labelText: tFullName,
                           hintText: tFullName,
@@ -116,7 +113,7 @@ _launchURL() async {
                       TextFormField(
                         initialValue: 'bcs_2021076@gmail.com',
                         readOnly: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Icons.mail_outline_outlined),
                           labelText: tEmail,
                           hintText: tEmail,
@@ -133,7 +130,7 @@ _launchURL() async {
                       TextFormField(
                         initialValue: '8129462042',
                         readOnly: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Icons.phone_callback_outlined),
                           labelText: tPhoneNo,
                           hintText: tPhoneNo,
@@ -150,7 +147,7 @@ _launchURL() async {
                       TextFormField(
                         initialValue: 'abcdef',
                         readOnly: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Icons.fingerprint),
                           labelText: tPassword,
                           hintText: tPassword,
@@ -168,7 +165,7 @@ _launchURL() async {
                       Align(alignment: Alignment.center,child: TextButton(onPressed: (){_launchURL();}, child: Text.rich(TextSpan(
                         text: tedit,
                         style: Theme.of(context).textTheme.titleSmall,
-                        children: [
+                        children: const [
                           TextSpan(text:treq,style: TextStyle(color:Colors.blue)),
                         ])))),
                     ],),
