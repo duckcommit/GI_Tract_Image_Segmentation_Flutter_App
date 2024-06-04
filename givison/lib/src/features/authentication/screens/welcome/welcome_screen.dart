@@ -1,58 +1,132 @@
 import 'package:flutter/material.dart';
-import 'package:givison/src/constants/colors.dart';
 import 'package:givison/src/constants/image_strings.dart';
-import 'package:givison/src/constants/size.dart';
 import 'package:givison/src/constants/text_strings.dart';
 import 'package:givison/src/features/authentication/screens/login/login_screen.dart';
 import 'package:givison/src/features/authentication/screens/signup/signup_screen.dart';
 
-class WelcomeScreen extends StatelessWidget{
-  const WelcomeScreen({Key? key}): super(key:key);
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({Key? key}) : super(key: key);
 
-  
   @override
-  Widget build(BuildContext context){
-    var height=MediaQuery.of(context).size.height;
+  Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color.fromRGBO(240, 230, 239, 1),
-      body:Container(
-        padding: EdgeInsets.all(tDefaultSize),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Image(image: AssetImage(tWelcomeScreenImage), height:height*0.6),
-            Column(
+      backgroundColor: Colors.white,
+      body: Stack(
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            height: height * 0.80,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(tWelcomeTitle, style: Theme.of(context).textTheme.displayMedium,textAlign: TextAlign.center,),
-                Text(tWelcomeSubTitle, style: Theme.of(context).textTheme.titleSmall,textAlign: TextAlign.center,),
+                Image.asset(
+                  tSplashImage,
+                  height: height * 0.7,
+                ),
+                const SizedBox(height: 10.0),
               ],
             ),
-            Row(
-              children: [
-              Expanded(child: OutlinedButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginScreen()));
-                }, 
-                
-                child: Text(tLogin.toUpperCase())
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: height * 0.35,
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.vertical(
+                  top: Radius.circular(30.0),
+                ),
+              ),
+              padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text(
+                    tWelcomeTitle,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20.0),
+                  const Text(
+                    tWelcomeSubTitle,
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 20.0,
+                    ),
+                    textAlign: TextAlign.start,
+                  ),
+                  const SizedBox(height: 20.0),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUpScreen(),
+                          ),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.black,
+                        padding: const EdgeInsets.symmetric(vertical: 16.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      child: const Text(
+                        tSignup,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20.0),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginScreen(),
+                        ),
+                      );
+                    },
+                    child: const Text.rich(
+                      TextSpan(
+                        text: tAlreadyHaveAnAccount,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        children: [
+                          TextSpan(
+                            text: tLogin,
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              decorationColor: Colors.white,
+                              decorationThickness: 2.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-              SizedBox(width: 10.0,),
-              Expanded(child: ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpScreen()));}, 
-              style:OutlinedButton.styleFrom(
-                elevation: 0,
-                  shape: RoundedRectangleBorder(),
-                  foregroundColor: tWhiteColor,
-                  backgroundColor: tSecondaryColor,
-                  side: BorderSide(color: tSecondaryColor),
-                  padding: EdgeInsets.symmetric(vertical: tButtonHeight)
-                ),
-                child: Text(tSignup.toUpperCase()))),
-              ],
-            ),
-          ],
-        ),
-      ),    
+          ),
+        ],
+      ),
     );
   }
 }

@@ -13,11 +13,11 @@ const String tOnboardingCounter1='1/3';
 const String tOnboardingCounter2='2/3';
 const String tOnboardingCounter3='3/3';
 
-const String tWelcomeTitle = "Welcome, Namaste, Ahlaan Bik\n\n";
-const String tWelcomeSubTitle= '"Accelerating MRI Analysis for Precision Medicine" ~ GI VisioNn';
+const String tWelcomeTitle = "Welcome, नमस्ते, Bonjour, أهلاً بك";
+const String tWelcomeSubTitle= '"Accelerating MRI Analysis for Precision Medicine" ~ GI VisionN';
 
 const String tLogin = 'Login';
-const String tSignup = 'Signup';
+const String tSignup = "Let's Get Started";
 
 const String tLoginTitle = "Welcome Back Doc!";
 const String tLoginSubTitle = "Make it work, make it right, make it fast.";
