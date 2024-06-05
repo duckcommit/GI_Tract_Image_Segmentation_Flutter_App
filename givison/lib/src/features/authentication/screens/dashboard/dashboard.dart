@@ -3,7 +3,6 @@ import "package:givison/src/constants/colors.dart";
 import "package:givison/src/constants/image_strings.dart";
 import "package:givison/src/constants/size.dart";
 import "package:givison/src/constants/text_strings.dart";
-import 'package:givison/src/features/authentication/screens/dashboard/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:givison/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:givison/src/features/authentication/screens/dashboard/error.dart';
