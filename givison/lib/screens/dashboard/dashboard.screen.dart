@@ -3,6 +3,7 @@ import 'package:givison/common/colors.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/screens/on_boarding/on_boarding.screen.dart';
 import 'package:givison/screens/dashboard/error.screen.dart';
 import 'package:image_picker/image_picker.dart';
@@ -45,7 +46,7 @@ Future<DataModel> submitData(String imageUrl) async {
 }
 
 class _DashboardState extends State<Dashboard> {
-  DataModel? _dataModel; //used in line 156
+  DataModel? _dataModel;
   File? image;
   String imageUrl = '';
 
@@ -57,9 +58,9 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       appBar: AppBar(
         leading: ClickableIcon(),
-        title: Text(
+        title: const Text(
           tAppNameBar,
-          style: TextStyle(fontSize: 28, color: Colors.black),
+          style: TextStyles.blackTitle,
         ),
         centerTitle: true,
         elevation: 0,
@@ -68,7 +69,6 @@ class _DashboardState extends State<Dashboard> {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: tCardBgColor,
             ),
           )
         ],
@@ -79,24 +79,21 @@ class _DashboardState extends State<Dashboard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 tDashboardTitleMain,
-                style: TextStyle(
-                    fontSize: 28,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+                style: TextStyles.blackTitle,
               ),
               const SizedBox(height: 20),
-              Text(
+              const Text(
                 tDashboardTitle,
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyles.blackSubTitle,
               ),
               const SizedBox(height: 30),
               Image(
-                image: AssetImage(tupload),
+                image: const AssetImage(tupload),
                 height: size.height * 0.4,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               SizedBox(
@@ -141,10 +138,7 @@ class _DashboardState extends State<Dashboard> {
                   },
                   child: Text(
                     tUpload.toUpperCase(),
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyles.loginButton,
                   ),
                 ),
               ),
@@ -189,10 +183,7 @@ class _DashboardState extends State<Dashboard> {
                       ? const CircularProgressIndicator(color: Colors.white)
                       : Text(
                           tSegment.toUpperCase(),
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyles.loginButton,
                         ),
                 ),
               ),
@@ -211,7 +202,7 @@ class ClickableIcon extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         auth.signOut().then((value) {
-          Navigator.push(
+          Navigator.pushReplacement(
             context,
             MaterialPageRoute(
               builder: (context) => OnBoardingScreen(),

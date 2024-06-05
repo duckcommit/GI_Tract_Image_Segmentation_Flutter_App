@@ -1,13 +1,18 @@
 import 'dart:ui';
 
-const tPrimaryColor=Color(0xFFFFE400);
-const tSecondaryColor=Color(0xFF272727);
-const tAccentColor=Color(0xFF001BFF);
+import 'package:flutter/material.dart';
 
-const tCardBgColor=Color(0xFFF7F6F1);
-const tWhiteColor=Color(0xffffffff);
 const tDarkColor=Color(0xFF000000);
 
-const tOnboardingPage1Color = Color.fromRGBO(184, 190, 221, 1);
-const tOnboardingPage2Color = Color.fromRGBO(239, 195, 230, 1);
-const tOnboardingPage3Color = Color.fromRGBO(254, 254, 254, 1);
+const tOnboardingPage1Color = Color.fromRGBO(255, 255, 255, 1);
+const tOnboardingPage2Color = Color.fromRGBO(255, 255, 255, 1);
+const tOnboardingPage3Color = Color.fromRGBO(255, 255, 255, 1);
+
+const Color primaryWhite = Colors.white;
+const Color secondaryWhite = Colors.white70;
+const Color tertiaryWhite = Colors.white54;
+const Color primaryBlack = Colors.black;
+const Color secondaryBlack = Colors.black54;
+
+
+

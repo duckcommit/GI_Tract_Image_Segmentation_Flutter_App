@@ -7,6 +7,7 @@ import 'package:givison/common/colors.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/screens/welcome/welcome.screen.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
@@ -72,10 +73,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image(image: AssetImage(tOnBoardingImage1), height: size.height*0.4,),
-                    Column(
+                    const Column(
                       children: [
-                        Text(tOnBoardingTitle1, style: Theme.of(context).textTheme.displayMedium,textAlign:TextAlign.center,),
-                        Text(tOnBoardingSubTitle1, textAlign:TextAlign.center, style: Theme.of(context).textTheme.titleSmall),
+                        Text(tOnBoardingTitle1, style: TextStyles.blackTitle,textAlign:TextAlign.center,),
+                        Text(tOnBoardingSubTitle1, textAlign:TextAlign.center, style: TextStyles.blackSubTitle),
                         Text(tOnboardingCounter1),
                         SizedBox(height: 70.0,)
                       ],
@@ -90,10 +91,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image(image: AssetImage(tOnBoardingImage2), height: size.height*0.4,),
-                    Column(
+                    const Column(
                       children: [
-                        Text(tOnBoardingTitle2, style: Theme.of(context).textTheme.displayMedium,textAlign:TextAlign.center,),
-                        Text(tOnBoardingSubTitle2, textAlign:TextAlign.center, style: Theme.of(context).textTheme.titleSmall),
+                        Text(tOnBoardingTitle2, style: TextStyles.blackTitle,textAlign:TextAlign.center,),
+                        Text(tOnBoardingSubTitle2, textAlign:TextAlign.center, style: TextStyles.blackSubTitle),
                         Text(tOnboardingCounter2),
                         SizedBox(height: 60.0,)
                       ],
@@ -108,10 +109,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image(image: AssetImage(tOnBoardingImage3), height: size.height*0.4,),
-                    Column(
+                    const Column(
                       children: [
-                        Text(tOnBoardingTitle3, style: Theme.of(context).textTheme.displayMedium,textAlign:TextAlign.center,),
-                        Text(tOnBoardingSubTitle3, textAlign:TextAlign.center, style: Theme.of(context).textTheme.titleSmall),
+                        Text(tOnBoardingTitle3, style: TextStyles.blackTitle,textAlign:TextAlign.center,),
+                        Text(tOnBoardingSubTitle3, textAlign:TextAlign.center, style: TextStyles.blackSubTitle),
                         Text(tOnboardingCounter3),
                         SizedBox(height: 60.0,)
                       ],
@@ -125,13 +126,13 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             bottom: 60.0,
             child: OutlinedButton(
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> WelcomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> const WelcomeScreen()));
               },
               style: ElevatedButton.styleFrom(
-                side: const BorderSide(color: Colors.black26),
+                side: const BorderSide(color: primaryBlack),
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(20),
-                foregroundColor: Colors.white
+                foregroundColor: primaryWhite
               ), 
               child: Container(
                 padding: const EdgeInsets.all(20.0),

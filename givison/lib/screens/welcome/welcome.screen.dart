@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/text_strings.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/screens/login/login.screen.dart';
 import 'package:givison/screens/signup/signup.screen.dart';
 
@@ -46,20 +47,13 @@ class WelcomeScreen extends StatelessWidget {
                 children: [
                   const Text(
                     tWelcomeTitle,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 28.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyles.whiteTitle,
                     textAlign: TextAlign.start,
                   ),
                   const SizedBox(height: 20.0),
                   const Text(
                     tWelcomeSubTitle,
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 20.0,
-                    ),
+                    style: TextStyles.whiteSubTitle,
                     textAlign: TextAlign.start,
                   ),
                   const SizedBox(height: 20.0),
@@ -84,10 +78,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       child: const Text(
                         tSignup,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
-                        ),
+                        style: TextStyles.loginButton, // Use the common text style
                       ),
                     ),
                   ),
@@ -104,21 +95,11 @@ class WelcomeScreen extends StatelessWidget {
                     child: const Text.rich(
                       TextSpan(
                         text: tAlreadyHaveAnAccount,
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyles.whiteloginLink,
                         children: [
                           TextSpan(
                             text: tLogin,
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              decoration: TextDecoration.underline,
-                              decorationColor: Colors.white,
-                              decorationThickness: 2.0,
-                            ),
+                            style: TextStyles.whiteloginLinkHighlighted,
                           ),
                         ],
                       ),

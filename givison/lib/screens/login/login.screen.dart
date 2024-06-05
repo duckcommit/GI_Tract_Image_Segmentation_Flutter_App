@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/screens/signup/signup.screen.dart';
 import 'package:givison/screens/dashboard/dashboard.screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -86,19 +87,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const Text(
                   tLoginTitle,
-                  style: TextStyle(
-                    fontSize: 28.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+                  style: TextStyles.blackTitle
                 ),
                 const SizedBox(height: 8),
                 const Text(
                   tLoginSubTitle,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    color: Colors.black54,
-                  ),
+                  style: TextStyles.blackSubTitle
                 ),
                 const SizedBox(height: 40),
                 Form(
@@ -173,17 +167,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => EmailScreen()),
+                                  builder: (context) => const EmailScreen()),
                             );
                           },
                           child: const Text(
                             tForgetPassword,
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15.0,
-                              decoration: TextDecoration.underline,
-                            ),
+                            style: TextStyles.blackloginLinkHighlighted,
                           ),
                         ),
                       ),
@@ -207,16 +196,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                           child: isLoading
-                              ? CircularProgressIndicator()
+                              ? const CircularProgressIndicator()
                               : const Text(
                                   tLogin,
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
+                                  style: TextStyles.loginButton,
                                   ),
                                 ),
                         ),
-                      ),
                       const SizedBox(height: 20),
                       Align(
                         alignment: Alignment.center,
@@ -225,21 +211,16 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SignUpScreen()));
+                                    builder: (context) => const SignUpScreen()));
                           },
-                          child: Text.rich(
+                          child: const Text.rich(
                             TextSpan(
                               text: tNoAccount,
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: TextStyles.blackloginLink,
                               children: [
                                 TextSpan(
                                   text: tSignup,
-                                  style: const TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15.0,
-                                    decoration: TextDecoration.underline,
-                                  ),
+                                  style: TextStyles.blackloginLinkHighlighted,
                                 ),
                               ],
                             ),

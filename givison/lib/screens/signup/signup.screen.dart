@@ -3,6 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/common/toastMessage.dart';
 import 'package:givison/screens/signup/verify_email.screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -86,19 +87,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 const SizedBox(height: 40),
                 const Text(
                   tSignupTitle,
-                  style: TextStyle(
-                    fontSize: 28.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+                  style: TextStyles.blackTitle
                 ),
                 const SizedBox(height: 8),
                 const Text(
                   tSignupSubTitle,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    color: Colors.black54,
-                  ),
+                  style: TextStyles.blackSubTitle
                 ),
                 const SizedBox(height: 40),
                 Form(
@@ -237,10 +231,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ),
                           child: const Text(
                             tSignupButton,
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: TextStyles.loginButton
                           ),
                         ),
                       ),
@@ -249,18 +240,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text.rich(
                           TextSpan(
                             text: tTnctitle,
-                            style: TextStyle(
-                              color: Colors.black54,
-                              fontSize: 15.0,
-                            ),
+                            style: TextStyles.blackloginLink,
                             children: [
                               TextSpan(
                                 text: tTnc,
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15.0,
-                                ),
+                                style: TextStyles.blackloginLinkHighlighted,
                               ),
                             ],
                           ),

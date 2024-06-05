@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:givison/common/text_styles.dart';
 import 'package:givison/screens/dashboard/dashboard.screen.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
@@ -69,12 +70,12 @@ class _VerifyState extends State<Verify> {
                   children: [
                     Text(
                       tVerifyTitle,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: TextStyles.blackTitle, 
                       textAlign: TextAlign.center,
                     ),
                     Text(
                       tVerifySTitle,
-                      style: Theme.of(context).textTheme.titleSmall,
+                      style: TextStyles.blackSubTitle, 
                       textAlign: TextAlign.center,
                     ),
                   ],
