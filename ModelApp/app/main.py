@@ -306,4 +306,5 @@ async def process_predict(data:TestParams):
 
 #docker pull 
 #docker run -p 8000:8000
-#docker run -p 8000:8000 -d vyshaj/project-image
+#sudo chmod 666 /var/run/docker.sock
+#docker run -p 8000:8000 -d vyshaj/app

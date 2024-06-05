@@ -1,9 +1,8 @@
-import "package:flutter/material.dart";
-import "package:givison/src/constants/colors.dart";
-import "package:givison/src/constants/image_strings.dart";
-import "package:givison/src/constants/size.dart";
-import "package:givison/src/constants/text_strings.dart";
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:givison/src/constants/colors.dart';
+import 'package:givison/src/constants/image_strings.dart';
+import 'package:givison/src/constants/size.dart';
+import 'package:givison/src/constants/text_strings.dart';
 import 'package:givison/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:givison/src/features/authentication/screens/dashboard/error.dart';
 import 'package:image_picker/image_picker.dart';
@@ -14,6 +13,7 @@ import 'dart:io';
 import 'dart:convert';
 import 'package:givison/src/features/authentication/screens/dashboard/DataModel.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -31,7 +31,6 @@ Future<DataModel> submitData(String imageUrl) async {
   var jsonData = json.decode(response.body);
   var key = "image_url";
   var valueVar = jsonData[key];
-  //downloadfile(valueVar);
   var time = DateTime.now().millisecondsSinceEpoch;
   var path = "/storage/emulated/0/Download/image-$time.png";
   var file = File(path);
@@ -46,7 +45,6 @@ Future<DataModel> submitData(String imageUrl) async {
 }
 
 class _DashboardState extends State<Dashboard> {
-  // ignore: unused_field
   DataModel? _dataModel; //used in line 156
   File? image;
   String imageUrl = '';
@@ -57,115 +55,152 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-            leading: ClickableIcon(),
-            title: Text(tAppNameBar,
-                style: Theme.of(context).textTheme.displayMedium),
-            centerTitle: true,
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-            actions: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: tCardBgColor),
-                child: IconButton(
-                    onPressed: () {
+      appBar: AppBar(
+        leading: ClickableIcon(),
+        title: Text(
+          tAppNameBar,
+          style: TextStyle(fontSize: 28, color: Colors.black),
+        ),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        actions: [
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: tCardBgColor,
+            ),
+          )
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.all(tDashboardPadding),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                tDashboardTitleMain,
+                style: TextStyle(
+                    fontSize: 28,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                tDashboardTitle,
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+              const SizedBox(height: 30),
+              Image(
+                image: AssetImage(tupload),
+                height: size.height * 0.4,
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                  ),
+                  onPressed: () async {
+                    ImagePicker imagePicker = ImagePicker();
+                    final image = await imagePicker.pickImage(
+                      source: ImageSource.gallery,
+                    );
+                    if (image == null) return;
+
+                    // Check if the selected file is not a .png
+                    if (!image.path.toLowerCase().endsWith('.png')) {
+                      Fluttertoast.showToast(
+                          msg: 'Selected file must be a .png image');
+                      return;
+                    }
+
+                    String uniqueFileName =
+                        DateTime.now().millisecondsSinceEpoch.toString();
+                    Reference referenceRoot = FirebaseStorage.instance.ref();
+                    Reference referenceDirImages =
+                        referenceRoot.child("images");
+                    Reference referenceImageToUpload =
+                        referenceDirImages.child(uniqueFileName);
+
+                    try {
+                      await referenceImageToUpload.putFile(File(image.path));
+                      imageUrl = await referenceImageToUpload.getDownloadURL();
+                    } catch (error) {
+                      // Handle error
+                    }
+                  },
+                  child: Text(
+                    tUpload.toUpperCase(),
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                  ),
+                  onPressed: () async {
+                    if (imageUrl.isEmpty) {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const ProfileScreen()));
-                    },
-                    icon: const Image(image: AssetImage(tman))),
-              )
-            ]),
-        body: SingleChildScrollView(
-          child: Container(
-              padding: const EdgeInsets.all(tDashboardPadding),
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(tDashboardTitleMain,
-                        style: Theme.of(context).textTheme.displayLarge),
-                    const SizedBox(height: tDashboardPadding * 1),
-                    Text(tDashboardTitle,
-                        style: Theme.of(context).textTheme.bodyMedium),
-                    const SizedBox(height: tDashboardPadding * 2),
-                    Image(
-                      image: const AssetImage(tupload),
-                      height: size.height * 0.4,
-                    ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                          onPressed: () async {
-                            ImagePicker imagePicker = ImagePicker();
-                            final image = await imagePicker.pickImage(
-                                source: ImageSource.gallery);
-                            if (image == null) return;
-                            String uniqueFileName = DateTime.now()
-                                .millisecondsSinceEpoch
-                                .toString();
-                            Reference referenceRoot =
-                                FirebaseStorage.instance.ref();
-                            Reference referenceDirImages =
-                                referenceRoot.child("images");
-                            Reference referenceImageToUpload =
-                                referenceDirImages.child(uniqueFileName);
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ErrorScreen(),
+                        ),
+                      );
+                      isloading = false;
+                    } else {
+                      setState(() {
+                        isloading = true;
+                      });
 
-                            try {
-                              await referenceImageToUpload
-                                  .putFile(File(image.path));
-                              imageUrl =
-                                  await referenceImageToUpload.getDownloadURL();
-                            } catch (error) {}
-                            ;
-                          },
-                          child: Text(tUpload.toUpperCase())),
-                    ),
-                    const SizedBox(height: tDashboardPadding * 2),
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            onSurface: Colors.blue,
+                      final DataModel data = await submitData(imageUrl);
+
+                      setState(() {
+                        _dataModel = data;
+                        isloading =
+                            false; // Set loading to false after data is fetched
+                      });
+
+                      Fluttertoast.showToast(msg: "Downloaded!");
+                    }
+                  },
+                  child: isloading
+                      ? const CircularProgressIndicator(color: Colors.white)
+                      : Text(
+                          tSegment.toUpperCase(),
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
                           ),
-                          onPressed: () async {
-                            if (imageUrl.isEmpty) {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const ErrorScreen()));
-                              isloading = false;
-                            } else {
-                              setState(() {
-                                isloading = true;
-                              });
-                              Future.delayed(const Duration(seconds: 20), () {
-                                setState(() {
-                                  isloading = false;
-                                });
-                                Fluttertoast.showToast(msg: "Downloaded!");
-                              });
-
-                              final DataModel data = await submitData(imageUrl);
-
-                              setState(
-                                () {
-                                  _dataModel = data;
-                                },
-                              );
-                            }
-                            ;
-                          },
-                          child: isloading
-                              ? const CircularProgressIndicator(
-                                  color: Colors.white)
-                              : Text(tSegment.toUpperCase())),
-                    ),
-                  ])),
-        ));
+                        ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -176,8 +211,12 @@ class ClickableIcon extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         auth.signOut().then((value) {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => OnBoardingScreen()));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => OnBoardingScreen(),
+            ),
+          );
         });
       },
       child: const Icon(
