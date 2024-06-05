@@ -129,7 +129,7 @@ class _DashboardState extends State<Dashboard> {
                       width: double.infinity,
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            overlayColor: Colors.blue,
+                            onSurface: Colors.blue,
                           ),
                           onPressed: () async {
                             if (imageUrl.isEmpty) {

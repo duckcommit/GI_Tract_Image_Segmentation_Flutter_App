@@ -104,7 +104,7 @@ class WelcomeScreen extends StatelessWidget {
                       TextSpan(
                         text: tAlreadyHaveAnAccount,
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.white70,
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
                         ),

@@ -14,7 +14,7 @@ const String tOnboardingCounter2='2/3';
 const String tOnboardingCounter3='3/3';
 
 const String tWelcomeTitle = "Welcome, नमस्ते, Bonjour, أهلاً بك";
-const String tWelcomeSubTitle= '"Accelerating MRI Analysis for Precision Medicine" ~ GI VisionN';
+const String tWelcomeSubTitle= '"Accelerating MRI Analysis for Precision Medicine" ~ GI Vision';
 
 const String tLogin = 'Login';
 const String tSignup = "Let's Get Started";
