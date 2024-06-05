@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:givison/auth.services.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
@@ -8,7 +9,7 @@ import 'package:givison/screens/dashboard/dashboard.screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:givison/common/toastMessage.dart';
 import 'package:givison/screens/login/forget_password/email.screen.dart';
-import 'package:ionicons/ionicons.dart';
+import 'package:ionicons/ionicons.dart'; // Import the AuthService
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -19,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  final _auth = FirebaseAuth.instance;
+  final AuthService _authService = AuthService(); // Initialize AuthService
   bool isLoading = false;
   bool obscurePassword = true; // Initially password is obscured
 
@@ -30,22 +31,16 @@ class _LoginScreenState extends State<LoginScreen> {
     passwordController.dispose();
   }
 
-  void loginnn() {
+  void login() {
     setState(() {
       isLoading = true;
     });
 
-    _auth
-        .signInWithEmailAndPassword(
-            email: emailController.text, password: passwordController.text)
-        .then((value) {
-      Utils().toastMessage(value.user!.email.toString());
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => Dashboard()));
-    }).catchError((error) {
-      debugPrint(error.toString());
-      Utils().toastMessage(error.toString());
-    }).whenComplete(() {
+    _authService.login(
+      context,
+      emailController.text,
+      passwordController.text,
+    ).whenComplete(() {
       setState(() {
         isLoading = false;
       });
@@ -87,12 +82,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const Text(
                   tLoginTitle,
-                  style: TextStyles.blackTitle
+                  style: TextStyles.blackTitle,
                 ),
                 const SizedBox(height: 8),
                 const Text(
                   tLoginSubTitle,
-                  style: TextStyles.blackSubTitle
+                  style: TextStyles.blackSubTitle,
                 ),
                 const SizedBox(height: 40),
                 Form(
@@ -184,7 +179,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ? null
                               : () {
                                   if (_formKey.currentState!.validate()) {
-                                    loginnn();
+                                    login();
                                   }
                                 },
                           style: ElevatedButton.styleFrom(
@@ -200,9 +195,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               : const Text(
                                   tLogin,
                                   style: TextStyles.loginButton,
-                                  ),
                                 ),
                         ),
+                      ),
                       const SizedBox(height: 20),
                       Align(
                         alignment: Alignment.center,
@@ -240,8 +235,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future resetPassword() async {
     try {
-      await FirebaseAuth.instance
-          .sendPasswordResetEmail(email: emailController.text.trim());
+      await _authService.resetPassword(emailController.text);
     } on FirebaseAuthException catch (e) {
       print(e);
     }

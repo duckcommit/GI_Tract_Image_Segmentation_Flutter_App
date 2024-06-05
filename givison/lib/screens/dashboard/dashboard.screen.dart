@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:givison/auth.services.dart';
 import 'package:givison/common/colors.dart';
 import 'package:givison/common/image_strings.dart';
 import 'package:givison/common/size.dart';
@@ -14,7 +15,6 @@ import 'dart:io';
 import 'dart:convert';
 import 'package:givison/models/datamodel.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -196,19 +196,13 @@ class _DashboardState extends State<Dashboard> {
 }
 
 class ClickableIcon extends StatelessWidget {
-  final auth = FirebaseAuth.instance;
+  final AuthService _authService = AuthService(); // Initialize AuthService
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        auth.signOut().then((value) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => OnBoardingScreen(),
-            ),
-          );
-        });
+        _authService.logout(context); // Use AuthService to logout
       },
       child: const Icon(
         Icons.logout,

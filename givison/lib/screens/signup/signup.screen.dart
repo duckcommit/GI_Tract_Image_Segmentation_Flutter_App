@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:givison/auth.services.dart';
 import 'package:givison/common/size.dart';
 import 'package:givison/common/text_strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -23,9 +24,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final passwordController = TextEditingController();
   final phController = TextEditingController();
   final nameController = TextEditingController();
-
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final fireStore = FirebaseFirestore.instance.collection("users");
+  final AuthService _authService = AuthService(); // Initialize AuthService
 
   @override
   void dispose() {
@@ -34,28 +33,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
     passwordController.dispose();
   }
 
-  void loginn() {
+  void signup() async {
     setState(() {
       loading = true;
     });
-    _auth
-        .createUserWithEmailAndPassword(
-            email: emailController.text.toString(),
-            password: passwordController.text.toString())
-        .then((value) {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const Verify()));
-    }).onError((error, stackTrace) {
-      Utils().toastMessage(error.toString());
-    });
-  }
-
-  void uploadingData() async {
-    await FirebaseFirestore.instance.collection("Users").add({
-      'Name': nameController.text.toString(),
-      'E-mail': emailController.text.toString(),
-      'Phone Number': phController.text.toString(),
-      'Pw': passwordController.text.toString(),
+    await _authService.signup(
+      context,
+      emailController.text,
+      passwordController.text,
+      nameController.text,
+      phController.text,
+    ).whenComplete(() {
+      setState(() {
+        loading = false;
+      });
     });
   }
 
@@ -87,12 +78,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 const SizedBox(height: 40),
                 const Text(
                   tSignupTitle,
-                  style: TextStyles.blackTitle
+                  style: TextStyles.blackTitle,
                 ),
                 const SizedBox(height: 8),
                 const Text(
                   tSignupSubTitle,
-                  style: TextStyles.blackSubTitle
+                  style: TextStyles.blackSubTitle,
                 ),
                 const SizedBox(height: 40),
                 Form(
@@ -199,22 +190,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             if (_formKey.currentState!.validate()) {
                               String email = emailController.text;
                               if (email.contains('@iiitm.ac.in')) {
-                                loginn();
-                                String name = nameController.text;
-                                String ph = phController.text;
-                                String pw = passwordController.text;
-                                fireStore
-                                    .doc(email)
-                                    .set({
-                                      'Name': name,
-                                      'Email': email,
-                                      'Phone': ph,
-                                      'Password': pw
-                                    })
-                                    .then((value) {})
-                                    .onError((error, stackStrace) {
-                                      Utils().toastMessage(error.toString());
-                                    });
+                                signup();
                               } else {
                                 Fluttertoast.showToast(
                                     msg: "Not the Organization Mail");
@@ -231,7 +207,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ),
                           child: const Text(
                             tSignupButton,
-                            style: TextStyles.loginButton
+                            style: TextStyles.loginButton,
                           ),
                         ),
                       ),

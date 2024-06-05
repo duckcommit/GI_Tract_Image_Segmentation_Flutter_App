@@ -68,7 +68,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             pages:[
               Container(
                 padding: const EdgeInsets.all(tDefaultSize),
-                color: tOnboardingPage1Color,
+                color: OnboardingPage1Color,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -86,7 +86,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
               Container(
                 padding: const EdgeInsets.all(tDefaultSize),
-                color: tOnboardingPage2Color,
+                color: OnboardingPage2Color,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -104,7 +104,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
               Container(
                 padding: const EdgeInsets.all(tDefaultSize),
-                color: tOnboardingPage3Color,
+                color: OnboardingPage3Color,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -137,7 +137,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               child: Container(
                 padding: const EdgeInsets.all(20.0),
               decoration: const BoxDecoration(
-                color: tDarkColor, shape: BoxShape.circle),
+                color: primaryBlack, shape: BoxShape.circle),
                 child: Icon(Icons.arrow_forward_ios),
               )
             ),
