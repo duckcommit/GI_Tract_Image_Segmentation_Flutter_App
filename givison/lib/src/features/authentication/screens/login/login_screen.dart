@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:givison/src/constants/image_strings.dart';
 import 'package:givison/src/constants/size.dart';
 import 'package:givison/src/constants/text_strings.dart';
@@ -8,189 +9,262 @@ import 'package:givison/src/features/authentication/screens/dashboard/dashboard.
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:givison/src/utils/utils.dart';
 import 'package:givison/src/features/authentication/screens/dashboard/email.dart';
+import 'package:ionicons/ionicons.dart';
 
-class LoginScreen extends StatefulWidget{
+class LoginScreen extends StatefulWidget {
   @override
-  _LoginScreenState createState()=> _LoginScreenState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  
-  final _formKey=GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final _auth = FirebaseAuth.instance;
+  bool isLoading = false;
+  bool obscurePassword = true; // Initially password is obscured
 
   @override
-  void dispose(){
+  void dispose() {
     super.dispose();
     emailController.dispose();
     passwordController.dispose();
-    
   }
 
-  void loginnn(){
-    _auth.signInWithEmailAndPassword(email:emailController.text, password:passwordController.text).then((value){
-      Utils().toastMessage(value.user!.email.toString());
-      Navigator.push(context, MaterialPageRoute(builder: (context)=> Dashboard()));
+  void loginnn() {
+    setState(() {
+      isLoading = true;
+    });
 
-    }).onError((error, stackTrace){
+    _auth
+        .signInWithEmailAndPassword(
+            email: emailController.text, password: passwordController.text)
+        .then((value) {
+      Utils().toastMessage(value.user!.email.toString());
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Dashboard()));
+    }).catchError((error) {
       debugPrint(error.toString());
       Utils().toastMessage(error.toString());
+    }).whenComplete(() {
+      setState(() {
+        isLoading = false;
+      });
     });
   }
+
   @override
   Widget build(BuildContext context) {
-    final size= MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
-          child: Container(
+          child: Padding(
             padding: const EdgeInsets.all(tDefaultSize),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image(image: AssetImage(tLoginImg), height: size.height*0.4,),
-                Text(tLoginTitle, style: Theme.of(context).textTheme.displayMedium,),
-                Text(tLoginSubTitle, style: Theme.of(context).textTheme.titleSmall,),
-
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.arrow_back, color: Colors.white),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ),
+                const SizedBox(height: 40),
+                Center(
+                  child: Image(
+                    image: const AssetImage(tSplashImage),
+                    height: size.height * 0.3,
+                  ),
+                ),
+                const Text(
+                  tLoginTitle,
+                  style: TextStyle(
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  tLoginSubTitle,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black54,
+                  ),
+                ),
+                const SizedBox(height: 40),
                 Form(
-                  key:_formKey,
-                  child: Container(
-                    padding: EdgeInsets.symmetric(vertical: tFormHeight-10),
-                    child: Column(
+                  key: _formKey,
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextFormField(
-                        controller:emailController,
+                        controller: emailController,
                         decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.person_outline_outlined),
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(
+                            Ionicons.mail,
+                            color: Colors.black,
+                          ),
                           labelText: tEmail,
                           hintText: tEmail,
-                          border: OutlineInputBorder()
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter email";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20,),
+                      const SizedBox(height: 20),
                       TextFormField(
-                        controller:passwordController,
-                        obscureText: true,
+                        controller: passwordController,
+                        obscureText: obscurePassword,
                         decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.fingerprint),
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(Ionicons.finger_print),
                           labelText: tPassword,
                           hintText: tPassword,
-                          border: OutlineInputBorder(),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                           suffixIcon: IconButton(
-                            onPressed: null,
-                            icon: Icon(Icons.remove_red_eye_sharp)
+                            onPressed: () {
+                              setState(() {
+                                obscurePassword = !obscurePassword;
+                              });
+                            },
+                            icon: Icon(
+                              obscurePassword
+                                  ? Icons.visibility_off
+                                  : Icons.visibility,
+                            ),
                           ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter password";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20),
-                      Align(alignment: Alignment.centerRight,child: TextButton(onPressed: (){
-                        showModalBottomSheet(
-                          context: context,
-                          shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)), 
-                          builder:(context) => Container(
-                          padding: const EdgeInsets.all(tDefaultSize),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children:[
-                              Text(tForgetPasswordTitle, style:Theme.of(context).textTheme.displayMedium,),
-                              Text(tForgetPasswordSubTitle, style:Theme.of(context).textTheme.titleSmall,),
-                              const SizedBox(height: 60.0,),
-                              GestureDetector(
-                                onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgetPasswordMailScreen()));},
-                                child: Container(
-                                  padding: const EdgeInsets.all(20.0),
-                                  decoration:BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: Colors.grey.shade200
-                                  ),
-                                  child: Row(children: [
-                                    const Icon(Icons.phone_android_outlined,size: 60.0,),
-                                    SizedBox(width: 20.0,),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(tmob, style:Theme.of(context).textTheme.displayMedium,),
-                                        Text(tResetViaPh, style:Theme.of(context).textTheme.titleSmall,),
-                                      ],
-                                    )
-                                  ]),
-                                ),
-                              ),
-                              const SizedBox(height: 40.0,),
-                              GestureDetector(
-                                onTap: () {resetPassword();
-                                  Navigator.push(context, MaterialPageRoute(builder: (context)=> EmailScreen()));},
-                                child: Container(
-                                  padding: const EdgeInsets.all(20.0),
-                                  decoration:BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: Colors.grey.shade200
-                                  ),
-                                  child: Row(children: [
-                                    const Icon(Icons.mail_outline_outlined,size: 60.0,),
-                                    SizedBox(width: 20.0,),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(tEmail, style:Theme.of(context).textTheme.displayMedium,),
-                                        Text(tResetViaEmail, style:Theme.of(context).textTheme.titleSmall,),
-                                      ],
-                                    )
-                                  ]),
-                                ),
-                              ),
-
-                      
-                            ]
-                          ),
-                        ),);
-                      }, child: Text(tForgetPassword))),
-                      SizedBox(
-                        width:double.infinity,
-                        child: ElevatedButton(
-                          onPressed: (){
-                            if(_formKey.currentState!.validate()){
-                              loginnn();
-                            }
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: () {
+                            resetPassword();
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => EmailScreen()),
+                            );
                           },
-                          child: Text(tLogin.toUpperCase())
+                          child: const Text(
+                            tForgetPassword,
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15.0,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
                         ),
                       ),
-                      Align(alignment: Alignment.center,child: TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpScreen()));}, child: Text.rich(TextSpan(
-                        text: tNoAccount,
-                        style: Theme.of(context).textTheme.titleSmall,
-                        children: [
-                          TextSpan(text:tSignup,style: TextStyle(color:Colors.blue)),
-                        ])))),
-                    ],),
-                  ))
-            ]),
+                      const SizedBox(height: 20),
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: isLoading
+                              ? null
+                              : () {
+                                  if (_formKey.currentState!.validate()) {
+                                    loginnn();
+                                  }
+                                },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(vertical: 16.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                          ),
+                          child: isLoading
+                              ? CircularProgressIndicator()
+                              : const Text(
+                                  tLogin,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Align(
+                        alignment: Alignment.center,
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignUpScreen()));
+                          },
+                          child: Text.rich(
+                            TextSpan(
+                              text: tNoAccount,
+                              style: Theme.of(context).textTheme.subtitle1,
+                              children: [
+                                TextSpan(
+                                  text: tSignup,
+                                  style: const TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15.0,
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        )),
+        ),
+      ),
     );
   }
-  Future resetPassword()async{
-    try{
-    await FirebaseAuth.instance.sendPasswordResetEmail(email: emailController.text.trim());
-    } on FirebaseAuthException catch (e){
+
+  Future resetPassword() async {
+    try {
+      await FirebaseAuth.instance
+          .sendPasswordResetEmail(email: emailController.text.trim());
+    } on FirebaseAuthException catch (e) {
       print(e);
     }
   }
-
 }

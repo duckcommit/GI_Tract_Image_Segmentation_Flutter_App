@@ -26,7 +26,7 @@ const String tAlreadyHaveAnAccount = "Already Have An Account? ";
 const String tEmail="E-Mail";
 const String tmob="Mobile";
 const String tPassword="Password";
-const String tForgetPassword = "Forget Password?";
+const String tForgetPassword = "Forgot Password?";
 const String tNoAccount="Don't have an Account? ";
 
 const String tFullName="Full Name";

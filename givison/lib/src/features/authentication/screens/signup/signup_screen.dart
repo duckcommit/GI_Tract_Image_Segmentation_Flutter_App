@@ -96,7 +96,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 const Text(
                   tSignupSubTitle,
                   style: TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 20.0,
                     color: Colors.black54,
                   ),
                 ),
