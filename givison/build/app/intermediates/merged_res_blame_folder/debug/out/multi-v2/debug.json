@@ -1688,7 +1688,7 @@
             "outputFile": "com.example.givison.app-merged_res-26:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\puthe\\Desktop\\New folder\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -2335,7 +2335,7 @@
             "outputFile": "com.example.givison.app-merged_res-26:/values-night-v31_values-night-v31.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\puthe\\Desktop\\New folder\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -4057,7 +4057,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\puthe\\Desktop\\New folder\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\puthe\\.gradle\\caches\\transforms-3\\039249d384a30029f1ccd3139fb2ac8c\\transformed\\jetified-activity-1.7.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,59",
+                        "endOffsets": "92,152"
+                    },
+                    "to": {
+                        "startLines": "91,109",
+                        "startColumns": "4,4",
+                        "startOffsets": "5706,6650",
+                        "endColumns": "41,59",
+                        "endOffsets": "5743,6705"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -4073,23 +4090,6 @@
                         "endLines": "152,155",
                         "endColumns": "12,12",
                         "endOffsets": "10680,10849"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\puthe\\.gradle\\caches\\transforms-3\\039249d384a30029f1ccd3139fb2ac8c\\transformed\\jetified-activity-1.7.2\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,59",
-                        "endOffsets": "92,152"
-                    },
-                    "to": {
-                        "startLines": "91,109",
-                        "startColumns": "4,4",
-                        "startOffsets": "5706,6650",
-                        "endColumns": "41,59",
-                        "endOffsets": "5743,6705"
                     }
                 },
                 {
@@ -5442,7 +5442,7 @@
             "outputFile": "com.example.givison.app-merged_res-26:/values-v31_values-v31.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\puthe\\Desktop\\New folder\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",

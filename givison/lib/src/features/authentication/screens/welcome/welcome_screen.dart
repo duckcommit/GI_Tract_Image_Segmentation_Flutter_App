@@ -51,7 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                       fontSize: 28.0,
                       fontWeight: FontWeight.bold,
                     ),
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.start,
                   ),
                   const SizedBox(height: 20.0),
                   const Text(
@@ -75,17 +75,18 @@ class WelcomeScreen extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        foregroundColor: Colors.white,
-                        backgroundColor: Colors.black,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
                       child: const Text(
                         tSignup,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
                         ),
                       ),
                     ),
@@ -105,13 +106,15 @@ class WelcomeScreen extends StatelessWidget {
                         text: tAlreadyHaveAnAccount,
                         style: TextStyle(
                           color: Colors.white70,
-                          fontSize: 12,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
                         children: [
                           TextSpan(
                             text: tLogin,
                             style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
                               decoration: TextDecoration.underline,
                               decorationColor: Colors.white,
                               decorationThickness: 2.0,

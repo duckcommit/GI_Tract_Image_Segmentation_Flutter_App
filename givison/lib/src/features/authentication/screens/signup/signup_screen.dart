@@ -1,200 +1,280 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:givison/src/constants/image_strings.dart';
 import 'package:givison/src/constants/size.dart';
 import 'package:givison/src/constants/text_strings.dart';
-import 'package:givison/src/features/authentication/screens/login/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:givison/src/utils/utils.dart';
 import 'package:givison/src/features/authentication/screens/dashboard/verify_email.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:ionicons/ionicons.dart';
 
 class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({Key? key}):super(key:key);
-  
+  const SignUpScreen({Key? key}) : super(key: key);
+
   @override
-  State<SignUpScreen> createState()=> _SignUpScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen>{
-  bool loading= false;
+class _SignUpScreenState extends State<SignUpScreen> {
+  bool loading = false;
   final _formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final phController = TextEditingController();
   final nameController = TextEditingController();
 
-  
-
   final FirebaseAuth _auth = FirebaseAuth.instance;
-
   final fireStore = FirebaseFirestore.instance.collection("users");
 
   @override
-  void dispose(){
+  void dispose() {
     super.dispose();
     emailController.dispose();
     passwordController.dispose();
   }
 
-  void loginn(){
-    setState((){
-                                loading = true;
-                              });
-                              _auth.createUserWithEmailAndPassword(
-                                email:emailController.text.toString(),
-                                password:passwordController.text.toString()).then((value){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const Verify()));
-                                  
-
-                                }).onError((error, stackTrace){
-                                  Utils().toastMessage(error.toString());
-                                  
-                            });
-                            }
+  void loginn() {
+    setState(() {
+      loading = true;
+    });
+    _auth
+        .createUserWithEmailAndPassword(
+            email: emailController.text.toString(),
+            password: passwordController.text.toString())
+        .then((value) {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => const Verify()));
+    }).onError((error, stackTrace) {
+      Utils().toastMessage(error.toString());
+    });
+  }
 
   void uploadingData() async {
-  await FirebaseFirestore.instance.collection("Users").add({
-    'Name': nameController.text.toString(),
-    'E-mail': emailController.text.toString(),
-    'Phone Number': phController.text.toString(),
-    'Pw': passwordController.text.toString(),
-  });
-}
-
+    await FirebaseFirestore.instance.collection("Users").add({
+      'Name': nameController.text.toString(),
+      'E-mail': emailController.text.toString(),
+      'Phone Number': phController.text.toString(),
+      'Pw': passwordController.text.toString(),
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    final size= MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color.fromRGBO(239, 195, 230, 1),
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
-          child: Container(
+          child: Padding(
             padding: const EdgeInsets.all(tDefaultSize),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image(image: const AssetImage(tSignupImg), height: size.height*0.37,),
-                Text(tSignupTitle, style: Theme.of(context).textTheme.displayMedium,),
-                Text(tSignupSubTitle, style: Theme.of(context).textTheme.titleSmall,),
-
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.arrow_back, color: Colors.white),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ),
+                const SizedBox(height: 40),
+                const Text(
+                  tSignupTitle,
+                  style: TextStyle(
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  tSignupSubTitle,
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    color: Colors.black54,
+                  ),
+                ),
+                const SizedBox(height: 40),
                 Form(
                   key: _formKey,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: tFormHeight-10),
-                    child: Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextFormField(
                         controller: nameController,
-                        
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.person_outline_outlined),
+                        decoration: InputDecoration(
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(
+                            Ionicons.person,
+                            color: Colors.black,
+                          ),
                           labelText: tFullName,
                           hintText: tFullName,
-                          border: OutlineInputBorder()
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter Name";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20,),
+                      const SizedBox(height: 20),
                       TextFormField(
                         controller: emailController,
-                      
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.mail_outline_outlined),
+                        decoration: InputDecoration(
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(Ionicons.mail),
                           labelText: tEmail,
                           hintText: tEmail,
-                          border: OutlineInputBorder()
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter email";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20,),
+                      const SizedBox(height: 20),
                       TextFormField(
                         controller: phController,
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.phone_callback_outlined),
+                        decoration: InputDecoration(
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(Ionicons.call),
                           labelText: tPhoneNo,
                           hintText: tPhoneNo,
-                          border: OutlineInputBorder()
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter Valid Phone Number";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20,),
+                      const SizedBox(height: 20),
                       TextFormField(
                         controller: passwordController,
-                        
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.fingerprint),
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          labelStyle: const TextStyle(color: Colors.black),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          prefixIcon: const Icon(Ionicons.finger_print),
                           labelText: tPassword,
                           hintText: tPassword,
-                          border: OutlineInputBorder(),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
                         ),
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Enter password";
                           }
                           return null;
                         },
                       ),
-                      const SizedBox(height: tFormHeight-20),
-                      
+                      const SizedBox(height: 40),
                       SizedBox(
-                        width:double.infinity,
+                        width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: ()async{
-                            if(_formKey.currentState!.validate()){
+                          onPressed: () async {
+                            if (_formKey.currentState!.validate()) {
                               String email = emailController.text;
-                              if(email.contains('@iiitm.ac.in')){
+                              if (email.contains('@iiitm.ac.in')) {
                                 loginn();
-                              String name = nameController.text;
-                              String ph = phController.text;
-                              String pw = passwordController.text;
-                              fireStore.doc(email).set({
-                                'Name':name,
-                                'Email':email,
-                                'Phone':ph,
-                                'Password':pw
-                              }).then((value){
-
-                              }).onError((error, stackStrace){
-                                Utils().toastMessage(error.toString());
-                              });
-                              }
-                              else{
-                                Fluttertoast.showToast(msg: "Not the Organization Mail");
+                                String name = nameController.text;
+                                String ph = phController.text;
+                                String pw = passwordController.text;
+                                fireStore
+                                    .doc(email)
+                                    .set({
+                                      'Name': name,
+                                      'Email': email,
+                                      'Phone': ph,
+                                      'Password': pw
+                                    })
+                                    .then((value) {})
+                                    .onError((error, stackStrace) {
+                                      Utils().toastMessage(error.toString());
+                                    });
+                              } else {
+                                Fluttertoast.showToast(
+                                    msg: "Not the Organization Mail");
                               }
                             }
-                          }, 
-                          child: Text(tSignup.toUpperCase())
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(vertical: 16.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                          ),
+                          child: const Text(
+                            tSignupButton,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
-                      Align(alignment: Alignment.center,child: TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginScreen()));}, child: Text.rich(TextSpan(
-                        text: tAlreadyHaveAnAccount,
-                        style: Theme.of(context).textTheme.titleSmall,
-                        children: const[
-                          TextSpan(text:tLogin,style: TextStyle(color:Colors.blue)),
-                        ])))),
-                    ],),
-                  ))
-            ]),
+                      const SizedBox(height: 40),
+                      const Center(
+                        child: Text.rich(
+                          TextSpan(
+                            text: tTnctitle,
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontSize: 15.0,
+                            ),
+                            children: [
+                              TextSpan(
+                                text: tTnc,
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        )),
+        ),
+      ),
     );
   }
 }

@@ -4,7 +4,7 @@
             "outputFile": "com.example.givison.app-mergeDebugResources-24:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\puthe\\Desktop\\New folder\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",

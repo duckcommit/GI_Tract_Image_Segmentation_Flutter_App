@@ -33,8 +33,11 @@ const String tFullName="Full Name";
 const String tPhoneNo="Phone No";
 const String tSubmit="Submit";
 
-const String tSignupTitle = "Get Aboard the GI Vision App";
-const String tSignupSubTitle = "Making MRI Scan Segmentation easier";
+const String tSignupTitle = "Create Account";
+const String tSignupSubTitle = "Fill Your Details and Get aboard the GI Vision App.";
+const String tSignupButton = "Sign Up";
+const String tTnctitle = "By Continuing, you agree to our ";
+const String tTnc = "Terms of Service and Privacy Policy.";
 
 const String tForgetPasswordTitle="Make a Selection!";
 const String tForgetPasswordSubTitle="Choose either of the options to reset. Do Not Forget the Password after Reseting!";

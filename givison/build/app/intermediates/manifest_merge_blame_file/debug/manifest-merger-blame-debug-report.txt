@@ -13,14 +13,14 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:2:5-66
-15-->C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:2:22-64
+15-->C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:2:5-66
+15-->C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:2:22-64
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:3:5-80
-16-->C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:3:22-78
+16-->C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:3:5-80
+16-->C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\AndroidManifest.xml:3:22-78
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[:connectivity_plus] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-17-->[:connectivity_plus] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+17-->[:connectivity_plus] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+17-->[:connectivity_plus] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
 18
 19    <permission
 19-->[androidx.core:core:1.10.1] C:\Users\puthe\.gradle\caches\transforms-3\4a1acc0a5fd450ac6bc284f2c033de08\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
@@ -75,37 +75,37 @@
 63            android:value="2" />
 64
 65        <service
-65-->[:firebase_auth] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+65-->[:firebase_auth] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 66            android:name="com.google.firebase.components.ComponentDiscoveryService"
-66-->[:firebase_auth] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+66-->[:firebase_auth] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 67            android:directBootAware="true"
 67-->[com.google.firebase:firebase-common:20.3.3] C:\Users\puthe\.gradle\caches\transforms-3\7964c346269f804eb8d90e3e09f15d6b\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
 68            android:exported="false" >
 68-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\puthe\.gradle\caches\transforms-3\52dfa66230730d045654fbd24ac9fb00\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
 69            <meta-data
-69-->[:firebase_auth] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+69-->[:firebase_auth] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 70                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-70-->[:firebase_auth] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+70-->[:firebase_auth] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[:firebase_auth] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+71-->[:firebase_auth] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 72            <meta-data
-72-->[:firebase_storage] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+72-->[:firebase_storage] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 73                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-73-->[:firebase_storage] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+73-->[:firebase_storage] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[:firebase_storage] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+74-->[:firebase_storage] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 75            <meta-data
-75-->[:cloud_firestore] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+75-->[:cloud_firestore] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 76                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-76-->[:cloud_firestore] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+76-->[:cloud_firestore] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[:cloud_firestore] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+77-->[:cloud_firestore] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 78            <meta-data
-78-->[:firebase_core] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+78-->[:firebase_core] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-79-->[:firebase_core] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+79-->[:firebase_core] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_core] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+80-->[:firebase_core] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 81            <meta-data
 81-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\puthe\.gradle\caches\transforms-3\52dfa66230730d045654fbd24ac9fb00\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
 82                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -127,31 +127,31 @@
 90        </service>
 91
 92        <provider
-92-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+92-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 93            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-93-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+93-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
 94            android:authorities="com.example.givison.flutter.image_provider"
-94-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+94-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
 95            android:exported="false"
-95-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+95-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 96            android:grantUriPermissions="true" >
-96-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+96-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
 97            <meta-data
-97-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+97-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
 98                android:name="android.support.FILE_PROVIDER_PATHS"
-98-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+98-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
 99                android:resource="@xml/flutter_image_picker_file_paths" />
-99-->[:image_picker_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+99-->[:image_picker_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
 100        </provider>
 101
 102        <activity
-102-->[:url_launcher_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+102-->[:url_launcher_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
 103            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-103-->[:url_launcher_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+103-->[:url_launcher_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 104            android:exported="false"
-104-->[:url_launcher_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+104-->[:url_launcher_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 105            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-105-->[:url_launcher_android] C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+105-->[:url_launcher_android] C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
 106        <activity
 106-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\puthe\.gradle\caches\transforms-3\52dfa66230730d045654fbd24ac9fb00\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:29:9-46:20
 107            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

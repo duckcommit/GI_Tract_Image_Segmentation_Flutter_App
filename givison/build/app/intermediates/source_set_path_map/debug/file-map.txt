@@ -17,22 +17,22 @@ com.example.givison.app-jetified-core-ktx-1.10.1-15 C:\Users\puthe\.gradle\cache
 com.example.givison.app-lifecycle-runtime-2.6.1-16 C:\Users\puthe\.gradle\caches\transforms-3\cb3f7a66c745c901143de7eaeb57ef88\transformed\lifecycle-runtime-2.6.1\res
 com.example.givison.app-jetified-play-services-basement-18.1.0-17 C:\Users\puthe\.gradle\caches\transforms-3\e27088a534801301a5703bf9b401f66c\transformed\jetified-play-services-basement-18.1.0\res
 com.example.givison.app-lifecycle-viewmodel-2.6.1-18 C:\Users\puthe\.gradle\caches\transforms-3\ebada102066ad0fedaed85bde65645a9\transformed\lifecycle-viewmodel-2.6.1\res
-com.example.givison.app-debug-19 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\debug\res
-com.example.givison.app-main-20 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\res
-com.example.givison.app-pngs-21 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\pngs\debug
-com.example.givison.app-resValues-22 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\resValues\debug
-com.example.givison.app-rs-23 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\rs\debug
-com.example.givison.app-mergeDebugResources-24 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.givison.app-mergeDebugResources-25 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.givison.app-merged_res-26 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\merged_res\debug
-com.example.givison.app-packaged_res-27 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-28 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-29 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-30 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-31 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-32 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\flutter_native_splash\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-33 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-34 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\fluttertoast\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-35 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-36 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\path_provider_android\intermediates\packaged_res\debug
-com.example.givison.app-packaged_res-37 C:\Users\puthe\Desktop\New folder\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\packaged_res\debug
+com.example.givison.app-debug-19 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\debug\res
+com.example.givison.app-main-20 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\android\app\src\main\res
+com.example.givison.app-pngs-21 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\pngs\debug
+com.example.givison.app-resValues-22 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\resValues\debug
+com.example.givison.app-rs-23 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\generated\res\rs\debug
+com.example.givison.app-mergeDebugResources-24 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.givison.app-mergeDebugResources-25 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.givison.app-merged_res-26 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\app\intermediates\merged_res\debug
+com.example.givison.app-packaged_res-27 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\cloud_firestore\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-28 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\connectivity_plus\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-29 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_auth\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-30 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-31 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_storage\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-32 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\flutter_native_splash\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-33 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-34 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\fluttertoast\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-35 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\image_picker_android\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-36 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\path_provider_android\intermediates\packaged_res\debug
+com.example.givison.app-packaged_res-37 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\url_launcher_android\intermediates\packaged_res\debug
