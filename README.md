@@ -34,7 +34,8 @@ Firestore: A NoSQL database for storing and managing user data and segmented ima
 
 
 
-https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App/assets/22213675/1efb0859-31d1-46ed-b9e5-492b8aaf9e33
+https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App/assets/22213675/20a08b62-3e42-4da7-a049-6cd2e05edc9f
+
 
 
 
@@ -55,7 +56,7 @@ git clone https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App.
   flutter run
 ```
 
-It is note that the app might not work if the Azure Cloud services are facing any issues.
+It is note that the app might not work if the Azure Cloud services are facing any issues. Hit me up for enabling my private cloud.
 # Need Help? 🔗 Link
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vyshnav-ajith/)
 
