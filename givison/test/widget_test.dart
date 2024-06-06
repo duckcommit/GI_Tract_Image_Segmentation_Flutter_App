@@ -1,30 +1,31 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:givison/main.dart';
+import 'package:givison/screens/login/login.screen.dart';
+import 'package:givison/screens/signup/signup.screen.dart';
+import 'package:givison/screens/welcome/welcome.screen.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const App());
+  testWidgets('WelcomeScreen UI Test', (WidgetTester tester) async {
+    // Build the WelcomeScreen widget
+    await tester.pumpWidget(const MaterialApp(
+      home: WelcomeScreen(),
+    ));
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify that the title and subtitle are displayed correctly
+    expect(find.text('Welcome to Givison'), findsOneWidget);
+    expect(find.text('Sign Up to get started'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Verify that the Sign Up button is displayed and clickable
+    expect(find.text('Sign Up'), findsOneWidget);
+    await tester.tap(find.text('Sign Up'));
+    await tester.pumpAndSettle(); // Wait for the transition animation to complete
+    expect(find.byType(SignUpScreen), findsOneWidget);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the "Already have an account?" text and "Login" link are displayed and clickable
+    expect(find.text('Already have an account?'), findsOneWidget);
+    expect(find.text('Login'), findsOneWidget);
+    await tester.tap(find.text('Login'));
+    await tester.pumpAndSettle(); // Wait for the transition animation to complete
+    expect(find.byType(LoginScreen), findsOneWidget);
   });
 }
