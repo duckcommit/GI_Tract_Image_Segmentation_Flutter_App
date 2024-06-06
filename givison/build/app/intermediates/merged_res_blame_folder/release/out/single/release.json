@@ -1,0 +1,650 @@
+[
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xxhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_notification_icon_background.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_answer_low.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_answer_low.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-hdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_browser_actions_context_menu_row.xml.flat",
+        "source": "com.example.givison.app-browser-1.4.0-12:/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_corner.xml.flat",
+        "source": "com.example.givison.app-packaged_res-34:/drawable/corner.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-hdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-hdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_decline.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_decline.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xxhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xxhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-v21_background.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-v21/background.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_notification_action.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/notification_action.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_notification_bg_low.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night_background.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night/background.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-hdpi_launcher_icon.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-hdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_answer.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_answer.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_notification_template_icon_group.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_browser_actions_context_menu_page.xml.flat",
+        "source": "com.example.givison.app-browser-1.4.0-12:/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xxxhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xxxhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.givison.app-main-19:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/xml_image_share_filepaths.xml.flat",
+        "source": "com.example.givison.app-browser-1.4.0-12:/xml/image_share_filepaths.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_custom_dialog.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-v21_notification_action_background.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/raw_firebase_common_keep.xml.flat",
+        "source": "com.example.givison.app-jetified-firebase-common-20.3.3-7:/raw/firebase_common_keep.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/xml_flutter_image_picker_file_paths.xml.flat",
+        "source": "com.example.givison.app-packaged_res-35:/xml/flutter_image_picker_file_paths.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-mdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-mdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-mdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_notification_template_part_time.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-mdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-mdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_answer_video_low.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_answer_video_low.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_light.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_dark.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xxhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xxhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_notification_template_part_chronometer.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xxxhdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/color_common_google_signin_btn_text_light.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-v21_launch_background.xml.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-mdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_answer_video.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_answer_video.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-ldpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-ldpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_answer.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/color_common_google_signin_btn_tint.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi_android12splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-hdpi/android12splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_notification_bg.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-xxxhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxxhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxxhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-xxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_launch_background.xml.flat",
+        "source": "com.example.givison.app-main-19:/drawable/launch_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_toast_custom.xml.flat",
+        "source": "com.example.givison.app-packaged_res-34:/layout/toast_custom.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-mdpi_launcher_icon.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-mdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-anydpi-v21_ic_call_decline_low.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-anydpi-v21/ic_call_decline_low.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-v21_background.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-v21/background.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_notification_tile_bg.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night-hdpi_splash.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night-hdpi/splash.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout-v21_notification_action.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-hdpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-hdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/layout_notification_action_tombstone.xml.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_background.png.flat",
+        "source": "com.example.givison.app-main-19:/drawable/background.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xxhdpi-v4_ic_call_decline.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xxhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "com.example.givison.app-main-19:/mipmap-xxxhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable_toast_bg.xml.flat",
+        "source": "com.example.givison.app-packaged_res-34:/drawable/toast_bg.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-night_launch_background.xml.flat",
+        "source": "com.example.givison.app-main-19:/drawable-night/launch_background.xml"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "com.example.givison.app-jetified-play-services-base-18.0.1-11:/drawable-xhdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "com.example.givison.app-merged_res-26:/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "com.example.givison.app-core-1.10.1-4:/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    }
+]

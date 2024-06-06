@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.givison.app-mergeReleaseResources-24:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\puthe\\Desktop\\Projects\\givision\\GI_Tract_Image_Segmentation_Flutter_App\\givison\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "from": {
+                        "startLines": "3,18",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,1147",
+                        "endLines": "11,20",
+                        "endColumns": "12,12",
+                        "endOffsets": "789,1313"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,665",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "660,829"
+                    }
+                }
+            ]
+        }
+    ]
+}

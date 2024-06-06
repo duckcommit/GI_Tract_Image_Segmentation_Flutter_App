@@ -1,0 +1,14 @@
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-java-1.0.0-beta04-0 C:\Users\puthe\.gradle\caches\transforms-3\4a0135d61b50d6b9a325d40c360d384f\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-annotation-experimental-1.1.0-1 C:\Users\puthe\.gradle\caches\transforms-3\568092cd69e447d06a3d4f20e1319b3b\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-core-1.6.0-2 C:\Users\puthe\.gradle\caches\transforms-3\5e597819f3559a04fcd35a858c5a5ea9\transformed\core-1.6.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-firebase-common-20.3.3-3 C:\Users\puthe\.gradle\caches\transforms-3\7964c346269f804eb8d90e3e09f15d6b\transformed\jetified-firebase-common-20.3.3\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-1.0.0-beta04-4 C:\Users\puthe\.gradle\caches\transforms-3\b7774c0cf23d7fae1082a7e4afb884ae\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-play-services-basement-18.1.0-5 C:\Users\puthe\.gradle\caches\transforms-3\e27088a534801301a5703bf9b401f66c\transformed\jetified-play-services-basement-18.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-main-6 C:\Users\puthe\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.15.1\android\src\main\res
+io.flutter.plugins.firebase.core.firebase_core-release-7 C:\Users\puthe\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.15.1\android\src\release\res
+io.flutter.plugins.firebase.core.firebase_core-pngs-8 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\generated\res\pngs\release
+io.flutter.plugins.firebase.core.firebase_core-resValues-9 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\generated\res\resValues\release
+io.flutter.plugins.firebase.core.firebase_core-rs-10 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\generated\res\rs\release
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-11 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-12 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.core.firebase_core-merged_res-13 C:\Users\puthe\Desktop\Projects\givision\GI_Tract_Image_Segmentation_Flutter_App\givison\build\firebase_core\intermediates\merged_res\release
