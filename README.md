@@ -4,6 +4,8 @@ First of all, shout out to @Arlendious for providing the ML model.
 
 The GI Tract Image Segmentation Flutter App is a medical application designed to assist healthcare professionals in segmenting MRI scans of the gastrointestinal tract. This automated tool uses machine learning to identify areas that require surgical intervention, ensuring a more efficient and precise approach to cancer treatment.
 
+You can download the apk from the Release Section.
+
 # Key Features
 
 User Authentication: Healthcare professionals can sign up and log in using their organization email addresses, which are hardcoded for security. Email verification is implemented via OTP.
@@ -32,13 +34,14 @@ Firestore: A NoSQL database for storing and managing user data and segmented ima
 
 
 
-https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App/assets/22213675/1efb0859-31d1-46ed-b9e5-492b8aaf9e33
+https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App/assets/22213675/20a08b62-3e42-4da7-a049-6cd2e05edc9f
+
 
 
 
 # Getting Started
 
-1) Clone this repository to your local machine.
+1) Clone this repository to your local machine. Or simply download the apk version.
 ```bash
 git clone https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App.git
 ```
@@ -53,7 +56,7 @@ git clone https://github.com/duckcommit/GI_Tract_Image_Segmentation_Flutter_App.
   flutter run
 ```
 
-It is note that the app might not work if the Azure Cloud services are facing any issues.
+It is note that the app might not work if the Azure Cloud services are facing any issues. Hit me up for enabling my private cloud.
 # Need Help? 🔗 Link
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vyshnav-ajith/)
 
