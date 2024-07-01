@@ -21,7 +21,7 @@ void main() {
     await tester.pumpAndSettle(); // Wait for the transition animation to complete
     expect(find.byType(SignUpScreen), findsOneWidget);
 
-    // Verify that the "Already have an account?" text and "Login" link are displayed and clickable
+    // Verify that the "Already have an account?" text and "Login" link are displayed and can be clicked
     expect(find.text('Already have an account?'), findsOneWidget);
     expect(find.text('Login'), findsOneWidget);
     await tester.tap(find.text('Login'));
@@ -29,3 +29,5 @@ void main() {
     expect(find.byType(LoginScreen), findsOneWidget);
   });
 }
+
+//Need to find more innovative ways to test 
