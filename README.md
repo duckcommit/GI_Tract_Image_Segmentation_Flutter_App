@@ -1,6 +1,6 @@
 # GI Tract Image Segmentation Flutter App
 
-First of all, shout out to @Arlendious for providing the ML model.
+First of all, shout out to @Arlendious for providing the [Deep Learning Model](https://www.researchgate.net/publication/376248419_LWU-Net_approach_for_Efficient_Gastro-Intestinal_Tract_Image_Segmentation_in_Resource-Constrained_Environments).
 
 The GI Tract Image Segmentation Flutter App is a medical application designed to assist healthcare professionals in segmenting MRI scans of the gastrointestinal tract. This automated tool uses machine learning to identify areas that require surgical intervention, ensuring a more efficient and precise approach to cancer treatment.
 
